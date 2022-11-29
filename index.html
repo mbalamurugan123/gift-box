@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main">
+
+    <h2>WIP-UP GIFT BOXES</h2>
+    <input type="number" id="input" value="">
+    <button onclick="fun()">submit</button>
+    <!-- <div id="outer"> -->
+    <div id="out" style="position: relative; top: 30px">
+    <!-- <h1 id="count">0</h1> -->
+  <!-- </div> -->
+    </div>
+
+  </div>
+  
+
+  <script>
+    function fun() {
+      var x = document.getElementById('input').value;
+      var im = document.querySelector('#out');
+      // var co=document.querySelector('#count');
+      for (i = 0; i < x; i++) {
+        var div = document.createElement('div');
+        // var p=document.createElement('p');
+        
+        div.innerHTML = '<img src="download.jpg">';
+        // p.innerHTML=i;
+       
+        im.appendChild(div);
+        co.appendChild(p);
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-image: linear-gradient(to left, rgb(79, 79, 224), rgb(255, 192, 203));
+       
+    }
+    img {
+      float: left;
+      position: relative;
+      top: 250px;
+      text-align: center;
+      border-radius: 20px;
+      padding: 10px;
+      text-align: center;
+      display: block;
+      left: 50px;
+      width: 200px;
+      height: 200px;
+    }
+
+    H2 {
+      text-align: center;
+      font-size: xx-large;
+      position: relative;
+      top: 100px;
+    }
+
+    input,
+    button {
+      position: relative;
+
+      top: 200px;
+      border-radius: 7px;
+    }
+
+    .main {
+      display: block;
+      text-align: center;
+    }
+
+
+    input {
+      width: 200px;
+      height: 25px;
+    }
+
+    button {
+      height: 30px;
+      width: 100px;
+      text-transform: uppercase;
+
+    }
+  </style>
+</body>
+
+</html>
